@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row mb-4 mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <label for="validationCustom04" class="form-label">Selecciona el tipo de formulario</label>
+                    <form [formGroup]="formSeleccion">
+                        <select class="form-select" formControlName="formulario" (change)="optFormulario()">
+                            <option value="" selected disabled hidden>...Formulario...</option>
+                            <option *ngFor="let formulario of formularios" [value]="formulario.id">
+                                {{ formulario.nombre }}
+                            </option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="" *ngIf="this.sltFormulario">
+        <app-info-documento></app-info-documento>
+    </div>
+    <div class="" *ngIf="this.sltFormulario">
+        <app-info-receptor></app-info-receptor>
+    </div>
+    <div class="" *ngIf="this.sltFormulario">
+        <app-info-productos></app-info-productos>
+    </div>
+    <div class="" *ngIf="this.sltFormulario">
+        <app-info-total></app-info-total>
+    </div>
+    <div class="" *ngIf="this.sltFormulario && (this.sltFormulario=='NC'||this.sltFormulario=='ND')">
+        <app-info-referencia></app-info-referencia>
+    </div>
+    <div class="" *ngIf="this.sltFormulario && this.sltFormulario=='FX'">
+        <app-info-incoterm></app-info-incoterm>
+    </div>
+    <div class="" *ngIf="this.sltFormulario">
+        <app-info-personalizados></app-info-personalizados>
+    </div>
+</div>

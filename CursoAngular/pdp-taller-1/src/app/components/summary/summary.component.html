@@ -1,0 +1,11 @@
+<h2>SUMMARY</h2>
+<hr>
+<h3>ENTER CODE COUPON</h3>
+<label for="customRange2" class="form-label">Example range</label>
+<input type="range" class="form-range" min="0" max="100" (change)="recalcular()" [(ngModel)]="cupon">
+<hr>
+<h3>SubTotal: {{subTotal}} </h3>
+<h3>Shipping</h3>
+<h3>Cupon: {{cupon}} </h3>
+<hr>
+<h2>Total: {{total}} </h2>

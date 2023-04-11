@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --gris: #757575;
+  --ch1: #39b5e0;
+  --ch2: #a31acb;
+  --ch3: #ff78f0;
+  --ch4: #f5ea5a;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Krub", sans-serif;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 3.8rem;
+}
+
+.titulo span {
+  font-size: 2rem;
+  color: var(--ch2);
+}
+
+.contenedor {
+  max-width: 120rem;
+  /* margin: 0 auto 0 auto; */
+  margin: 0 auto;
+}
+
+.nav-bg {
+  background-color: var(--ch2);
+}
+
+.nav-principal {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .nav-principal {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.nav-principal a {
+  display: block;
+  text-align: center;
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.nav-principal a:hover {
+  background-color: var(--ch1);
+  color: var(--oscuro);
+}
+
+.hero {
+  background-image: url("https://images.wallpaperscraft.com/image/single/hand_laptop_work_223785_1280x720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  padding: 20px;
+}

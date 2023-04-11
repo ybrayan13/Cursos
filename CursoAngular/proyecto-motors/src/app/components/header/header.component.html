@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="inicio">
+            <i class="fa-solid fa-gear"></i>&nbsp;ProyectoMotors
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+                        aria-controls="offcanvasWithBackdrop"><i class="fa-sharp fa-solid fa-bars"></i></a>
+                    <!-- <a class="nav-link"><i class="fa-sharp fa-solid fa-bars"></i></a> -->
+                </li>
+
+            </ul>
+            <ul class="nav justify-content-end">
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Active</a>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <div class="btn-group">
+                        <i type="button" class="btn dropdown-toggle text-white" data-bs-toggle="dropdown"
+                            aria-expanded="false" #pais>
+                            <img [alt]="paisPosicionado.abreviatura" width="30"
+                                src="http://purecatamphetamine.github.io/country-flag-icons/3x2/{{paisPosicionado.abreviatura}}.svg" />&nbsp;{{paisPosicionado.nombre}}
+                        </i>
+                        <ul class="dropdown-menu dropdown-menu-lg-end">
+                            <li *ngFor="let pais of paises; let i=index">
+                                <a class="dropdown-item" (click)="paisSeleccionado(pais)">
+                                    <img [alt]="pais.abreviatura" width="30"
+                                        src="http://purecatamphetamine.github.io/country-flag-icons/3x2/{{pais.abreviatura}}.svg" />&nbsp;{{pais.nombre}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <!-- <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+    aria-labelledby="offcanvasWithBackdropLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Offcanvas with backdrop</h5>
+        <button #btnCanvasClose type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="nav flex-column">
+            <li class="nav-item" *ngFor="let categoria of categorias; let i=index">
+                <a class="nav-link categoria" aria-current="page" (click)="navegarCategoria(categoria.nombre)">
+                    <i class="{{categoria.icono}}"></i>&nbsp;{{categoria.nombre}}
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

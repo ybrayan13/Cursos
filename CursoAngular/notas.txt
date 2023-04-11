@@ -1,0 +1,64 @@
+https://uigradients.com/#Royal
+https://fonts.google.com/
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Font Awesome CDN  -->
+  <script src="https://kit.fontawesome.com/6ed594b113.js" crossorigin="anonymous"></script>
+
+  <!-- Separate Popper and Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+// ngx-toastr --mensaje emergentes
+npm install ngx-toastr@15.2.2 --save
+{
+	error: 'toast-error',
+	info: 'toast-info',
+	success: 'toast-success',
+	warning: 'toast-warning',
+}
+
+// SQL
+DESKTOP-2Q2KMD8\SQLEXPRESS
+	
+
+ng g c components/cabecero --skip-tests=true
+ng g c components/tablero --skip-tests=true
+ng g c components/clientes --skip-tests=true
+ng g c components/editar-cliente --skip-tests=true
+ng g c components/login --skip-tests=true
+ng g c components/registro --skip-tests=true
+ng g c components/configuracion --skip-tests=true
+ng g c components/no-encontrado --skip-tests=true
+ng g c components/pie-pagina --skip-tests=true
+
+
+ng g c components/header -s --skip-tests=true
+ng g c components/producto -s --skip-tests=true
+ng g c components/producto-item -s --skip-tests=true
+ng g c components/resumen-producto -s --skip-tests=true
+ng g c components/shopping-cart-item -s --skip-tests=true
+ng g c components/summary -s --skip-tests=true
+ng g c components/img-shoe -s --skip-tests=true
+
+
+ng g c components/shared/navbar -s --skip-tests=true
+ng g c components/home -s --skip-tests=true
+ng g c components/heroes -s --skip-tests=true
+ng g c components/about -s --skip-tests=true
+
+
+ng g c components/inicio -s --skip-tests=true
+ng g c components/footer -s --skip-tests=true
+ng g c components/cuadro-magico -s --skip-tests=true
+
+ng g interface interfaces/categoria --skip-tests=true
+
+not found

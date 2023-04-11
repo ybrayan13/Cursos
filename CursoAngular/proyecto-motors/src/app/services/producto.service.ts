@@ -1,0 +1,271 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class ProductoService {
+  constructor() {
+    console.warn('producto conectado');
+  }
+
+  getProveedor() {
+    return this.proveedor;
+  }
+
+  getProducto() {
+    return this.producto;
+  }
+
+  private proveedor = ['carrefour', 'exito', 'carulla', 'cafam'];
+
+  private producto = [
+    {
+      categoria: 'Alimentos',
+      descripcion: 'Pasta en conchitas Doria 250 g',
+      carrefour: 1150,
+      exito: 1130,
+      carulla: 1100,
+      cafam: 1130,
+    },
+    {
+      categoria: 'Alimentos',
+      descripcion: 'Spaguetti Doria 250 g',
+      carrefour: 1090,
+      exito: 1090,
+      carulla: 1100,
+      cafam: 1130,
+    },
+    {
+      categoria: 'Alimentos',
+      descripcion: 'Cereal desayuno Zucaritas 420 g',
+      carrefour: 8790,
+      exito: 9250,
+      carulla: 9220,
+      cafam: 8770,
+    },
+    {
+      categoria: 'Alimentos',
+      descripcion: 'Fríjol rojo 1K',
+      carrefour: 6750,
+      exito: 6690,
+      carulla: 6610,
+      cafam: 3290,
+    },
+    {
+      categoria: 'Alimentos',
+      descripcion: 'Duraznos en almíbar 822 g neto',
+      carrefour: 6290,
+      exito: 4990,
+      carulla: 3900,
+      cafam: 4890,
+    },
+    {
+      categoria: 'Alimentos',
+      descripcion: 'Mantequilla con sal Alpina 250 g',
+      carrefour: 2690,
+      exito: 2720,
+      carulla: 2880,
+      cafam: 2700,
+    },
+    {
+      categoria: 'Alimentos',
+      descripcion: 'Margarina Rama 500 g',
+      carrefour: 5840,
+      exito: 5730,
+      carulla: 5960,
+      cafam: 5760,
+    },
+    {
+      categoria: 'Alimentos',
+      descripcion: 'Chocolate Sol 1 lb',
+      carrefour: 3250,
+      exito: 3190,
+      carulla: 3780,
+      cafam: 3600,
+    },
+    {
+      categoria: 'Alimentos',
+      descripcion: 'Café instantáneo Colcafe 170 g',
+      carrefour: 7560,
+      exito: 8880,
+      carulla: 8880,
+      cafam: 8990,
+    },
+    {
+      categoria: 'Alimentos',
+      descripcion: 'Azúcar blanca Manuelita 1 K',
+      carrefour: 2160,
+      exito: 2380,
+      carulla: 2190,
+      cafam: 2140,
+    },
+    {
+      categoria: 'Alimentos',
+      descripcion: 'Aceite Girasoli 1L',
+      carrefour: 6950,
+      exito: 7150,
+      carulla: 7030,
+      cafam: 7500,
+    },
+    {
+      categoria: 'Alimentos',
+      descripcion: 'Sal Refisal 1K',
+      carrefour: 750,
+      exito: 750,
+      carulla: 790,
+      cafam: 830,
+    },
+    {
+      categoria: 'Alimentos',
+      descripcion: 'Huevos bandeja 30 unidades',
+      carrefour: 8190,
+      exito: 8950,
+      carulla: 5990,
+      cafam: 6990,
+    },
+    {
+      categoria: 'Alimentos',
+      descripcion: 'Leche Alquería larga vida 900 ml x 6',
+      carrefour: 12090,
+      exito: 12090,
+      carulla: 12570,
+      cafam: 11520,
+    },
+    {
+      categoria: 'Alimentos',
+      descripcion: 'Arroz FlorHuila 1lb',
+      carrefour: 2390,
+      exito: 2390,
+      carulla: 2690,
+      cafam: 2550,
+    },
+    {
+      categoria: 'Alimentos',
+      descripcion: 'Lentejas 1K',
+      carrefour: 3450,
+      exito: 3950,
+      carulla: 3120,
+      cafam: 3890,
+    },
+    {
+      categoria: 'Aseo hogar',
+      descripcion: 'Clorox 1 L fragancia original',
+      carrefour: 2330,
+      exito: 2360,
+      carulla: 2660,
+      cafam: 2490,
+    },
+    {
+      categoria: 'Aseo hogar',
+      descripcion: 'Fabuloso 1 L ',
+      carrefour: 3990,
+      exito: 4030,
+      carulla: 4210,
+      cafam: 3990,
+    },
+    {
+      categoria: 'Aseo hogar',
+      descripcion: 'Detergente Fab 3 K',
+      carrefour: 18550,
+      exito: 17090,
+      carulla: 18580,
+      cafam: 17690,
+    },
+    {
+      categoria: 'Aseo hogar',
+      descripcion: 'Jabón barra Fab original',
+      carrefour: 1460,
+      exito: 1560,
+      carulla: 1590,
+      cafam: 1460,
+    },
+    {
+      categoria: 'Aseo hogar',
+      descripcion: 'Jabón barra Coco Varela 300 g',
+      carrefour: 1990,
+      exito: 2110,
+      carulla: 2090,
+      cafam: 1950,
+    },
+    {
+      categoria: 'Aseo hogar',
+      descripcion: 'Limpiavidrios Easy Off 500 ml',
+      carrefour: 5290,
+      exito: 5670,
+      carulla: 6980,
+      cafam: 5350,
+    },
+    {
+      categoria: 'Aseo hogar',
+      descripcion: 'Sabra paquete 3 Bom Bril',
+      carrefour: 2790,
+      exito: 2180,
+      carulla: 2240,
+      cafam: 2050,
+    },
+    {
+      categoria: 'Aseo hogar',
+      descripcion: 'Brillaollas Scoth Brite 6 unidades',
+      carrefour: 1650,
+      exito: 1650,
+      carulla: 2720,
+      cafam: 1450,
+    },
+    {
+      categoria: 'Aseo hogar',
+      descripcion: 'Lavaplatos Axion Limón 500 g',
+      carrefour: 5830,
+      exito: 3030,
+      carulla: 3670,
+      cafam: 3590,
+    },
+    {
+      categoria: 'Aseo hogar',
+      descripcion: 'Ambientador Glade 360 cm3 lavanda',
+      carrefour: 6900,
+      exito: 7270,
+      carulla: 7490,
+      cafam: 6990,
+    },
+    {
+      categoria: 'Aseo personal',
+      descripcion: 'Crema Colgate x 3 unidades menta',
+      carrefour: 6200,
+      exito: 6450,
+      carulla: 6460,
+      cafam: 8970,
+    },
+    {
+      categoria: 'Aseo personal',
+      descripcion: 'Listerine Fresh Burst 500 ml ',
+      carrefour: 10750,
+      exito: 11280,
+      carulla: 11710,
+      cafam: 9890,
+    },
+    {
+      categoria: 'Aseo personal',
+      descripcion: 'Jabón Protex Fresh x 3 ',
+      carrefour: 4790,
+      exito: 5310,
+      carulla: 5100,
+      cafam: 4850,
+    },
+    {
+      categoria: 'Aseo personal',
+      descripcion: 'Jabón líquido para manos Fiamme ',
+      carrefour: 14190,
+      exito: 11810,
+      carulla: 13020,
+      cafam: 14120,
+    },
+    {
+      categoria: 'Aseo personal',
+      descripcion: 'Shampoo Savital 350 ml',
+      carrefour: 5680,
+      exito: 5570,
+      carulla: 5950,
+      cafam: 6480,
+    },
+  ];
+}

@@ -1,0 +1,82 @@
+<div class="accordion mb-3">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#formularioProducto" aria-expanded="true">
+                Datos de los Productos
+            </button>
+        </h2>
+        <div id="formularioProducto" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+                <form class="row g-3">
+
+                    <div class="col-md-3">
+                        <div class="form-floating">
+                            <select class="form-select" formControlName="formulario" id="flProveedor">
+                                <option value="" selected disabled hidden>......</option>
+                                <option *ngFor="let proveedore of proveedores" [value]="proveedore">
+                                    {{ proveedore }}
+                                </option>
+                            </select>
+                            <label for="flProveedor">Proveedor</label>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="form-floating">
+                            <select class="form-select" formControlName="formulario" id="flProduco">
+                                <option value="" selected disabled hidden>......</option>
+                                <option *ngFor="let producto of productos; let i=index" [value]="i">
+                                    {{ producto.descripcion }}
+                                </option>
+                            </select>
+                            <label for="flProduco">Producto</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="flCantidad">
+                            <label for="flCantidad">Cantidad</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="form-floating">
+                            <select class="form-select" formControlName="formulario" id="flImpuesto">
+                                <option value="" selected disabled hidden>......</option>
+                                <option *ngFor="let producto of productos; let i=index" [value]="i">
+                                    {{ producto.descripcion }}
+                                </option>
+                            </select>
+                            <label for="flImpuesto">Impuesto</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" disabled>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-text">Impuesto $</span>
+                            <input type="text" class="form-control" disabled>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-text">Total $</span>
+                            <input type="text" class="form-control" disabled>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="accordion mb-3">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#formularioDocumento" aria-expanded="true">
+                Informacion del documento
+            </button>
+        </h2>
+        <div id="formularioDocumento" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+                <form class="row g-3">
+                    <div class="col-md-4">
+                        <label class="form-label">Compañia emisora</label>
+                        <select class="form-select" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Sucursal</label>
+                        <select class="form-select" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                        </select>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label">Username</label>
+                        <input class="form-control" value="..." disabled>
+
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label">City</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label">Moneda</label>
+                        <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

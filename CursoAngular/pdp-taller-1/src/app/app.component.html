@@ -1,0 +1,5 @@
+<div class="container">
+    <app-cabecera [productos]="productos"></app-cabecera>
+    <app-producto [productos]="productos" (propagar)="procesaPropagar($event)"></app-producto>
+    <app-resumen-producto [productos]="productos"></app-resumen-producto>
+</div>

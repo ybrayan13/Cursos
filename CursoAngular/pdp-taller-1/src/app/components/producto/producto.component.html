@@ -1,0 +1,13 @@
+<div class="row row-cols-1 row-cols-md-6 g-4">
+    <div class="col" *ngFor="let producto of productos">
+        <div class="card">
+            <img [src]="producto.urlImagen" class="card-img-top" [alt]="producto.nombre">
+            <div class="card-body">
+                <h5 class="card-title">{{producto.nombre}}</h5>
+                <p class="card-text">{{producto.descripcion}}</p>
+            </div>
+            <button type="button" class="btn btn-outline-primary" (click)="agregarProducto(producto)">Primary</button>
+        </div>
+    </div>
+</div>
+<hr>
